@@ -131,6 +131,9 @@ p {
   gap: 50px;
 }
 
+
+
+
 .header-link:hover,
 .header-link:focus {
   color: var(--hover-color);
@@ -142,6 +145,8 @@ p {
   color: var(--hover-color);
   background-color: var(--adress-link-color);
 }
+
+
 
 /*---------------Main----------------*/
 .main {
@@ -316,7 +321,6 @@ p {
   justify-content: center;
   color: var(--icon-color);
 
-  /*background-color:*/
 }
 
 .team-soc-icon {
@@ -360,6 +364,7 @@ p {
 .clients {
   padding-top: 88px;
   padding-bottom: 93px;
+  
 }
 .clients-title {
   font-size: 36px;
@@ -372,7 +377,7 @@ p {
   display: flex;
   justify-content: center;
   gap: 30px;
-  color: var(--hover-color);
+ 
 }
 
 .clients-link {
@@ -383,16 +388,26 @@ p {
   justify-content: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  fill: var(--icon-color);
 }
-.clients-icon:hover,
-.clients-icon:focus {
-  color: var(--hover-color);
-}
+
+
 
 .clients-link:hover,
 .clients-link:focus {
   border: 1px solid var(--hover-color);
+  fill: var(--hover-color);
 }
+
+.clients-icon:hover,
+.clients-link:focus{
+  fill: var(--hover-color);
+}
+
+
+
+
+
 
 /*-------------Footer----------------*/
 
@@ -400,6 +415,11 @@ p {
   background-color: var(--background-color-footer);
   padding-top: 60px;
   padding-bottom: 60px;
+  display: flex;
+
+ 
+
+
 }
 .footer-logo {
   display: block;
@@ -417,7 +437,14 @@ p {
   color: var(--studio-footer-color);
 }
 
+.contacts-container{
+  align-items: baseline;
+  
+}
+
 /*----------------Adress-----------------*/
+
+
 .adress-item {
   margin-bottom: 9px;
 }
@@ -446,15 +473,21 @@ p {
 
 .join-title {
   line-height: 1.14px;
-  align-items: center;
   text-transform: uppercase;
+  justify-content: center;
   color: var(--adress-link-color);
+  margin-bottom: 20px;
+
 }
 
 .join-list {
+  width: 206px;
+  gap: 20px;
+  padding-top: 20px;
   display: flex;
-  justify-content: center;
+
 }
+
 
 .join-link {
   width: 44px;
@@ -463,8 +496,23 @@ p {
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-  background-color: tomato;
+  background: rgba(255, 255, 255, 0.1);
+  fill:var(--adress-link-color);
+
 }
+
+.join-link:hover,
+.join-soc-link:focus {
+  background-color: var(--hover-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.join-icon:hover,
+.join-icon:focus {
+  color: var(--adress-link-color);
+}
+
+
 
 /*----------------Portfolio---------*/
 
